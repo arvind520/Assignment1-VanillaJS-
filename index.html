@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Beep Shoping</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="main__icon" style="cursor: pointer">
+            <img src="assets/img/logo.JPG" alt="" />
+            <span>beep</span>
+          </div>
+
+          <div class="nav__item user__nav" style="cursor: pointer">
+            <i class="fas fa-user"></i>
+            <span class="nav__item--name">My Profile</span>
+          </div>
+
+          <div class="nav__item cart__nav" style="cursor: pointer">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="nav__item--name">0 Items</span>
+            <span class="nav__item--price">$0.0</span>
+          </div>
+
+          <div class="nav__item" style="cursor: pointer">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="path">
+      <div class="container">
+        <h4>
+          <span style="color: deepskyblue">Home</span> /
+          <span>Accessories</span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="main__slider">
+      <div class="container">
+        <div class="row__slider">
+          <div class="menu">
+            <h3>ALL CATEGORIES</h3>
+            <h4 class="activeItem cat__item">Accesories</h4>
+            <h4 class="cat__item">Cables & Docks</h4>
+            <h4 class="cat__item">Cases & Films</h4>
+            <h4 class="cat__item">Charging Devices</h4>
+            <h4 class="cat__item">Connected Home</h4>
+            <h4 class="cat__item">Headphones</h4>
+          </div>
+          <div class="slider">
+            <div class="slider2">
+              <div class="slider3">
+                <div class="img__box">
+                  <img src="assets/img/img1.jpg" alt="" />
+                  <div class="img__content">
+                    <h1>iPhone 8</h1>
+                    <p>Performance and design. Taken right to the edge.</p>
+                    <a href="#">SHOP NOW</a>
+                  </div>
+                </div>
+                <div class="img__box">
+                  <img src="assets/img/img2.jpg" alt="" />
+                  <div class="img__content">
+                    <h1>Samsung Galaxy</h1>
+                    <p>We create the world.</p>
+                    <a href="#">SHOP NOW</a>
+                  </div>
+                </div>
+                <div class="img__box">
+                  <img src="assets/img/img3.jpg" alt="" />
+                  <div class="img__content">
+                    <h1>Xiaomi</h1>
+                    <p>Smart Desh ka Smartphone</p>
+                    <a href="#">SHOP NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__navBtn navBtn1"></div>
+            <div class="slider__navBtn navBtn2"></div>
+            <div class="slider__navBtn navBtn3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main__section">
+        <!-- !Left Section -->
+        <div class="left__section">
+          <div class="prices__box">
+            <h3>PRICES</h3>
+            <div class="price__rangeLabel">
+              <label for="min__price">Min</label>
+              <label for="max__price">Max</label>
+            </div>
+            <div class="price__rangeInput">
+              <input type="number" id="min__price" placeholder="$499" />
+              <span>-</span>
+              <input type="number" id="max__price" placeholder="$499" />
+            </div>
+          </div>
+          <div class="color__box">
+            <h3>COLOR</h3>
+            <div class="colorPicker">
+              <div class="color1">
+                <div class="color1-border outer__color">
+                  <div class="color1-fill inner__color"></div>
+                </div>
+              </div>
+
+              <div class="color2">
+                <div class="outer__color">
+                  <div class="color2-fill inner__color"></div>
+                </div>
+              </div>
+
+              <div class="color3">
+                <div class="outer__color">
+                  <div class="color3-fill inner__color"></div>
+                </div>
+              </div>
+
+              <div class="color4">
+                <div class="outer__color">
+                  <div class="color4-fill inner__color"></div>
+                </div>
+              </div>
+
+              <div class="color5">
+                <div class="outer__color">
+                  <div class="color5-fill inner__color"></div>
+                </div>
+              </div>
+
+              <div class="color6">
+                <div class="outer__color">
+                  <div class="color6-fill inner__color"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="brands">
+            <div class="brand__heading">BRAND</div>
+            <div class="brand__names">
+              <div class="brand_item1 brand_item brand__selected">
+                <span>Apple</span><span>99</span>
+              </div>
+              <div class="brand_item2 brand_item">
+                <span>Beats</span><span>99</span>
+              </div>
+              <div class="brand_item3 brand_item">
+                <span>Samsung</span><span>99</span>
+              </div>
+              <div class="brand_item4 brand_item">
+                <span>Siemens</span><span>99</span>
+              </div>
+            </div>
+          </div>
+          <div class="moreButton">MORE</div>
+        </div>
+        <!-- !Right Section -->
+        <div class="right__section">
+          <div class="filter__box">
+            <div class="no_of_items">
+              <span id="countItem">13 </span>
+              <span>Items</span>
+            </div>
+            <div class="sort_by">
+              <label for="short">Sort By</label>
+              <select name="short" id="short">
+                <option value="name">Name</option>
+                <option value="size">Size</option>
+                <option value="ascending">Ascending</option>
+                <option value="descending">Descending</option>
+              </select>
+            </div>
+            <div class="show">
+              <label for="showNo">Show</label>
+              <select name="showNo" id="shortNo">
+                <option value="6">6</option>
+                <option value="9">9</option>
+                <option value="12" selected>12</option>
+                <option value="15">15</option>
+              </select>
+            </div>
+            <div class="view__filter" selected><i class="fas fa-th"></i></div>
+            <div class="hamBurger"><i class="fas fa-bars"></i></div>
+          </div>
+          <div class="items__section">
+            <div class="container">
+              <img class="productImg" src="assets/img/headphone.jpg" alt="" />
+              <div class="item__name">Apple Macbook Pro</div>
+              <img src="assets/img/stars.JPG" alt="" />
+              <div class="price__value">
+                <span class="offerPrice">$499</span>
+                <span class="realPrice">$599</span>
+              </div>
+            </div>
+            <div class="container">
+              <img class="productImg" src="assets/img/headphone.jpg" alt="" />
+              <div class="item__name">Apple Macbook Pro</div>
+              <img src="assets/img/stars.JPG" alt="" />
+              <div class="price__value">
+                <span class="offerPrice">$499</span>
+                <span class="realPrice">$599</span>
+              </div>
+            </div>
+            <div class="container">
+              <img class="productImg" src="assets/img/headphone.jpg" alt="" />
+              <div class="item__name">Apple Macbook Pro</div>
+              <img src="assets/img/stars.JPG" alt="" />
+              <div class="price__value">
+                <span class="offerPrice">$499</span>
+                <span class="realPrice">$599</span>
+              </div>
+            </div>
+            <div class="container">
+              <img class="productImg" src="assets/img/headphone.jpg" alt="" />
+              <div class="item__name">Apple Macbook Pro</div>
+              <img src="assets/img/stars.JPG" alt="" />
+              <div class="price__value">
+                <span class="offerPrice">$499</span>
+                <span class="realPrice">$599</span>
+              </div>
+            </div>
+            <div class="container">
+              <img class="productImg" src="assets/img/headphone.jpg" alt="" />
+              <div class="item__name">Apple Macbook Pro</div>
+              <img src="assets/img/stars.JPG" alt="" />
+              <div class="price__value">
+                <span class="offerPrice">$499</span>
+                <span class="realPrice">$599</span>
+              </div>
+            </div>
+            <div class="container">
+              <img class="productImg" src="assets/img/headphone.jpg" alt="" />
+              <div class="item__name">Apple Macbook Pro</div>
+              <img src="assets/img/stars.JPG" alt="" />
+              <div class="price__value">
+                <span class="offerPrice">$499</span>
+                <span class="realPrice">$599</span>
+              </div>
+            </div>
+            <div class="container">
+              <img class="productImg" src="assets/img/headphone.jpg" alt="" />
+              <div class="item__name">Apple Macbook Pro</div>
+              <img src="assets/img/stars.JPG" alt="" />
+              <div class="price__value">
+                <span class="offerPrice">$499</span>
+                <span class="realPrice">$599</span>
+              </div>
+            </div>
+            <div class="container">
+              <img class="productImg" src="assets/img/headphone.jpg" alt="" />
+              <div class="item__name">Apple Macbook Pro</div>
+              <img src="assets/img/stars.JPG" alt="" />
+              <div class="price__value">
+                <span class="offerPrice">$499</span>
+                <span class="realPrice">$599</span>
+              </div>
+            </div>
+            <div class="container">
+              <img class="productImg" src="assets/img/headphone.jpg" alt="" />
+              <div class="item__name">Apple Macbook Pro</div>
+              <img src="assets/img/stars.JPG" alt="" />
+              <div class="price__value">
+                <span class="offerPrice">$499</span>
+                <span class="realPrice">$599</span>
+              </div>
+            </div>
+          </div>
+          <div class="page__number">
+            <div class="page1 page"><p>1</p></div>
+            <div class="page2 page"><p>2</p></div>
+            <div class="page3 page pageNumberSelected"><p>3</p></div>
+            <div class="page4 page"><p>4</p></div>
+            <div class="page5 page"><p>5</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="company footer__content">
+          <div class="company__heading">
+            <img src="assets/img/logoGray.JPG" alt="" />
+            <span class="beepHeading">beep</span>
+          </div>
+          <div class="footer__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever. Since the 1500s, when an unknown printer.
+          </div>
+        </div>
+        <div class="follow__us footer__content">
+          <div class="footer__heading">Follow Us</div>
+          <div class="footer__text">
+            Since the 1500s, when an unknown printer took a galley of type and
+            scrambled.
+          </div>
+          <div class="follow__logos">
+            <a href="#"
+              ><img
+                class="follow__logo"
+                src="assets/img/faceBookLogo.png"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="follow__logo"
+                src="assets/img/Twitter-featured.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="contact__us footer__content">
+          <div class="footer__heading">Contact Us</div>
+          <div class="footer__text">
+            <p>
+              My Company, 4578 Mamrmora Road, Glasgow
+              <br />
+              D04 89GR
+              <br />
+              Call us now: 0123-456-789
+              <br />
+              Email: support@whatever.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copywrite__contents">
+      <div class="container">
+        <div class="copywrite__text">
+          &#169; 2021 Ecommerce site by www.beep.com
+        </div>
+        <div class="cards__imgs">
+          <img src="assets/img/visa.png" alt="" />
+          <img src="assets/img/masterCard.png" alt="" />
+          <img src="assets/img/paypal.png" alt="" />
+          <img src="assets/img/masteroCard.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

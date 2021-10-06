@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav .container .row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.user__nav {
+  margin-left: auto;
+}
+
+.main__icon {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav__item:hover {
+  color: gray;
+}
+
+.nav__item--price {
+  color: rgb(185, 185, 185);
+}
+
+nav {
+  padding: 10px;
+  box-shadow: 0px 1px 2px -1px rgba(214, 214, 214, 0.94);
+  -webkit-box-shadow: 0px 1px 2px -1px rgba(214, 214, 214, 0.94);
+  -moz-box-shadow: 0px 1px 2px -1px rgba(214, 214, 214, 0.94);
+}
+
+/* MENU */
+.row__slider {
+  display: flex;
+  gap: 30px;
+}
+
+.menu {
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  width: 30%;
+}
+.menu .cat__item:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.activeItem {
+  color: deepskyblue;
+}
+
+.slider {
+  width: 70%;
+  position: relative;
+}
+
+.slider2 {
+  width: 100%;
+  height: 325px;
+  overflow: hidden;
+}
+
+.slider3 {
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s linear;
+}
+
+.img__box {
+  min-width: 100%;
+  height: 100%;
+}
+
+.img__box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__navBtn {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(238, 238, 238);
+  border: 1px solid silver;
+  border-radius: 50%;
+}
+
+.navBtn1 {
+  position: absolute;
+  bottom: 5px;
+  left: 47%;
+  cursor: pointer;
+}
+.navBtn2 {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  cursor: pointer;
+}
+.navBtn3 {
+  position: absolute;
+  bottom: 5px;
+  left: 53%;
+  cursor: pointer;
+}
+
+.img__content {
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 0;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.img__content h1 {
+  font-weight: 400;
+}
+.img__content p {
+  font-weight: 100;
+}
+
+.img__content a {
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  border-bottom: 3px solid white;
+  padding: 5px;
+}
+
+.img__content a:hover {
+  color: aqua;
+  cursor: pointer;
+  border-bottom: 3px solid aqua;
+}
+
+/* main__section */
+.main__section {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.left__section {
+  width: 30%;
+}
+
+.right__section {
+  width: 70%;
+}
+
+.prices__box,
+.color__box {
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.price__rangeLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.price__rangeInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__rangeInput input {
+  width: 30%;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* filter box */
+
+.filter__box {
+  background-color: whitesmoke;
+  font-size: 13px;
+  display: flex;
+  gap: 30px;
+  padding: 0 15px;
+}
+
+.view__filter {
+  margin-left: auto;
+}
+
+.no_of_items,
+.sort_by,
+.show,
+.view__filter,
+.hamBurger {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sort_by select,
+.show select {
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+  width: 100px;
+  padding: 2px;
+}
+
+.hamBurger {
+  font-size: medium;
+  color: rgb(187, 187, 187);
+}
+
+.view__filter {
+  font-size: medium;
+  background-color: lightgray;
+  padding: 15px;
+  color: rgb(0, 0, 126);
+}
+
+/* Color Box */
+
+.colorPicker {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.outer__color {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
+}
+
+.inner__color {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  padding: 1px;
+
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+}
+
+.color1-border {
+  border: 2px solid blue;
+}
+
+.color1-fill {
+  background-color: blue;
+}
+
+.color2-border {
+  border: 2px solid red;
+}
+
+.color2-fill {
+  background-color: red;
+}
+.color3-border {
+  border: 2px solid black;
+}
+
+.color3-fill {
+  background-color: black;
+}
+.color4-border {
+  border: 2px solid yellow;
+}
+
+.color4-fill {
+  background-color: yellow;
+}
+.color5-border {
+  border: 2px solid pink;
+}
+
+.color5-fill {
+  background-color: pink;
+}
+.color6-border {
+  border: 2px solid wheat;
+}
+
+.color6-fill {
+  background-color: wheat;
+}
+
+.brands {
+  padding: 25px 20px;
+  background-color: whitesmoke;
+}
+.brand__heading {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.brand_item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+.brand_item:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.brand_item1 {
+  font-size: 18px;
+}
+.brand_item2 {
+  font-size: 16px;
+}
+.brand_item3 {
+  font-size: 14px;
+}
+.brand_item4 {
+  font-size: 12px;
+}
+
+.brand__selected {
+  color: deepskyblue;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.moreButton {
+  background-color: whitesmoke;
+  margin: 30px 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.moreButton:hover {
+  color: lightgray;
+}
+
+/*! items section */
+.items__section {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.items__section .container {
+  border: 2px solid whitesmoke;
+  text-align: center;
+  width: 30%;
+}
+
+.item__name {
+  font-size: 12px;
+  font-weight: 600;
+  border-top: 1px solid whitesmoke;
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px 0 20px 0;
+}
+
+.productImg {
+  width: 100%;
+}
+
+.price__value {
+  padding: 10px;
+  font-size: 13px;
+}
+
+.offerPrice {
+  color: rgb(252, 3, 94);
+}
+
+.realPrice {
+  color: lightgray;
+  text-decoration: line-through;
+  text-decoration-color: black;
+  margin-left: 5px;
+}
+
+/* ! Page Number */
+.page__number {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 100px 0;
+}
+
+.page {
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.page:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+.pageNumberSelected {
+  color: white;
+  background-color: black;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page p {
+  margin: 0;
+}
+
+.pageNumberSelected:hover {
+  background-color: black;
+}
+
+/* ! footer */
+
+.footer {
+  border-top: 1px solid rgba(214, 214, 214, 0.94);
+  border-bottom: 1px solid rgba(214, 214, 214, 0.94);
+}
+
+.footer .container {
+  display: flex;
+  gap: 100px;
+  margin: 50px auto;
+}
+
+.footer__content {
+  width: 30%;
+}
+
+.footer__text {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+.footer__heading {
+  margin-top: 20px;
+}
+
+.company__heading {
+  display: flex;
+  align-items: center;
+}
+
+.beepHeading {
+  font-family: "Comfortaa", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  color: gray;
+}
+
+.follow__logo {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* ! Copyright part */
+.copywrite__contents .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.copywrite__text {
+  color: lightgray;
+  font-size: 14px;
+}
+
+.cards__imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards__imgs img {
+  height: 20px;
+  margin: auto 10px;
+}
+
+/* ! Responsive */
+@media only screen and (max-width: 700px) {
+  .row__slider {
+    flex-wrap: wrap;
+  }
+  .menu {
+    width: 100%;
+    order: 2;
+  }
+  .slider {
+    width: 100%;
+    order: 1;
+  }
+
+  .main__section {
+    display: block;
+  }
+
+  .left__section,
+  .right__section {
+    width: 100%;
+  }
+  .items__section .container {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .items__section .container {
+    width: 40%;
+  }
+}
+.menu .activeItem:hover {
+  color: deepskyblue;
+}
